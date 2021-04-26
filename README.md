@@ -1,8 +1,9 @@
 # PitestDemo
-Provides a quick demo of the Mutation testing tool for Java called pitest.
+Provides a quick demo of the Mutation testing tool for Java called Pitest.
 
 ## For more info visit the official pitest doc
-https://pitest.org/
+ - https://pitest.org/
+ - https://pitest.org/weak_tests/
 
 ## Run mutation testing via Pitest
 ```sh
@@ -10,4 +11,4 @@ https://pitest.org/
 ```
 
 ## Mutation testing report
-Report can be seen at ${Project_dir}/build/reports/pitest/${timestamp}/index.html
+Report can be seen at `${Project_dir}/build/reports/pitest/${timestamp}/index.html`
