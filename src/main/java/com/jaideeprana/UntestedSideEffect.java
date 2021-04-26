@@ -1,3 +1,5 @@
+package com.jaideeprana;
+
 public class UntestedSideEffect {
   public static String foo(boolean b) {
     if (b) {
