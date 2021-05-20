@@ -1,18 +1,17 @@
 package com.jaideeprana;
 
-import com.jaideeprana.UntestedSideEffect;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class UntestedSideEffectTest {
   @Test
-  public void shouldFailWhenGivenFalse() {
+  void shouldFailWhenGivenFalse() {
     assertEquals("FAIL", UntestedSideEffect.foo(false));
   }
 
   @Test
-  public void shouldBeOkWhenGivenTrue() {
+  void shouldBeOkWhenGivenTrue() {
     assertEquals("OK", UntestedSideEffect.foo(true));
   }
 }
