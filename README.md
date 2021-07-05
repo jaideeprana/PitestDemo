@@ -21,6 +21,7 @@ This is required because there's no out of the box support for junit 5.
 ```groovy
 pitest {
     junit5PluginVersion = '0.12'
+    coverageThreshold = 70
 }
 ```
 
@@ -50,6 +51,14 @@ Failing to ensure that will cause pitest to fail complaining no mutations found.
 
 At the time of creating this example `1.5.1` was the latest version of pitest, please check if newer version is available.
 
-## Todo
+## Adding threshold for coverage
 
-- [ ] Add config to define a threshold for the pitest coverage. That way if there's low pitest coverage then the build will fail.
+`coverageThreshold`
+Line coverage threshold below which the build will fail. This is an integer percent (0-100) that represents the fraction of the project covered by the tests. So for example if we want to apply a threshold with 100 percent, we can do it by adding the following at the bottom of our build.gradle file.
+
+```groovy
+pitest {
+    junit5PluginVersion = '0.12'
+    coverageThreshold = 100
+}
+```
